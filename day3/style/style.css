@@ -1,0 +1,67 @@
+/* 태그로 지정하기 */
+
+p {
+    color:antiquewhite;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+/* 아이디로 지정하기 : 중복이 불가*/
+#p1 {
+    color: brown;
+}
+
+#red{
+    color:red;
+}
+
+/* 클래스로 지정하기 : 중복이 가능해서 태그.클래스*/
+li.select {
+    color: aqua;
+}
+
+.header{
+    color: red;
+    background-color: black;
+}
+
+
+/* input에 css를 지정할 때 type 속성을 선택 */
+input[type="text"] {
+    background-color: red;
+}
+
+input[type="password"] {
+    background-color: blue;
+}
+
+/* 여러개 선택 */
+#header h1, #header h2 {
+    color:red;
+}
+
+/* 자손 선택자 */
+#header>h1{
+    color: blueviolet;
+}
+#header>h1>p {
+    color:brown
+}
+
+h1:hover {color: lawngreen;}
+h1:active{color:fuchsia;}
+
+input:enabled {
+    background-color: white;
+}
+
+input:disabled {
+    background-color: gray;
+}
+
+input:focus{
+    background-color: orange;
+}
