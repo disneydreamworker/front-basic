@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My page</title>
+    <link rel="stylesheet" href="./css/mypage.css" />
+  </head>
+  <body>
+
+    <!-- 유저 프로필 -->
+    <div class="user-component">
+      <ul class="user-component__id">
+        <li> 
+          <div>
+            <img class="user-component__profile" src="./img/mypage-profile.jpg" alt="">
+            <p>SSG</p>
+          </div>
+        </li>
+        <li class="add-profile-btn">
+          <div>
+            <span class="material-symbols-outlined">add_circle</span>
+            <p>새 프로필</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- 이어보기 -->
+    <div class="continue-watching__card">
+      <h3 class="continue-watching">이어보기</h3>
+      <ul class="continue-watching__imges">
+        <li>
+          <img src="./img/mypage-continueWatch-01.jpg" alt="">
+          <br><span class="continue-watching__title">센과 치히로의 행방불명</span>
+        </img>
+        </li>
+        <li>
+          <img src="./img/mypage-continueWatch-02.jpg" alt="">
+          <br><span class="continue-watching__title">마루 밑 아리에띠</span>
+        </img>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- 찜한 목록 -->
+      <div class="wishlist">
+        <div class="wishlist__header">
+          <hr>
+          <h3>내가 찜한 목록</h3>
+        </div>
+        <ul class="wishlist-item">
+          <li>
+            <div class="wishlist-info">
+              <img class="wishlist__img" src="./img/mypage-wishlist-01.jpg" alt="">
+              <div>
+                <p class="wishlist__title">도깨비</p>
+                <p class="wishlist__subtitle">김고은, 공유 출연</p>
+              </div>
+              <span class="material-icons"> play_arrow </span>
+            </div>
+          </li>
+          <li>
+            <div class="wishlist-info">
+              <img class="wishlist__img" src="./img/mypage-wishlist-02.jpg" alt="">
+              <div>
+                <p class="wishlist__title">오만과 편견</p>
+                <p class="wishlist__subtitle">황상준 출연</p>
+              </div>
+              <span class="material-icons"> play_arrow </span>
+            </div>
+          </li>
+          <li>
+            <div class="wishlist-info">
+              <img class="wishlist__img" src="./img/mypage-wishlist-03.jpg" alt="">
+              <div>
+                <p class="wishlist__title">편의점 샛별이</p>
+                <p class="wishlist__subtitle">김유정, 지상욱 출연</p>
+              </div>
+              <span class="material-icons"> play_arrow </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    <!-- 네비게이션 바 -->
+    <div class="navigation-bar">
+      <a href="find.html">
+        <span class="material-icons-outlined find-icon-clicked"> search </span>
+      </a>
+      <a href="mypage.html">
+        <span class="material-icons-outlined"> person_outline </span>
+      </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+@import "./global.css";
+
+.user-component {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 50px 0 50px 0;
+}
+.user-component__profile {
+    width: 5rem;
+    border-radius: 50%;
+    
+}
+
+.user-component__id {
+list-style: none;
+display: flex;
+text-align: center;
+}
+
+.user-component__id div {
+    margin: 0 25px 0 0;
+}
+
+.add-profile-btn span{
+    background-color: gray;
+    border-radius: 50%;
+    font-size: 5rem;
+}
+
+.continue-watching__card {
+    margin: 25px 0;
+    padding: 0 25px;
+    color: var(--text-color);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.continue-watching {
+  margin: 25px 25px 0 0;
+}
+
+.continue-watching__imges img {
+    width: 300px;
+    border-radius: 20px;
+    list-style: none;
+    padding: 10px;
+}
+
+.continue-watching__imges {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    overflow-x:auto;
+}
+
+.continue-watching__imges li {
+    background-color: var(--darkpurple);
+    border-radius: 20px;
+    margin: 10px 10px 0 0;
+    padding: 0 0 10px 0;
+}
+
+.continue-watching__header {
+  
+}
+
+.continue-watching__title {
+  padding: 0 0 0 12px;
+}
+
+.wishlist {
+    /* display: flex;
+    justify-content: left; */
+    margin: 25px 0;
+    padding: 0 25px;
+    color: var(--text-color);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.wishlist__header {
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.wishlist-item {
+    margin: 10px 0 10px 0;
+    list-style: none;
+}
+
+.wishlist-item li {
+    margin: 10px 0 10px 0;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--darkpurple);
+    border-radius: 20px;
+}
+
+.wishlist__img {
+width: 70px;
+border-radius: 25px;
+}
+
+.wishlist-info {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+}
+
+.wishlist-info span {
+    background-color: var(--purple);
+    border-radius: 50%;
+    margin-left: auto;
+    font-size: 4.5rem;
+}
+
+.wishlist__title {
+ font-size: 1.3rem;
+ margin-top: 0.8rem;
+ margin-left: 30px;
+}
+  
+.wishlist__subtitle {
+    /* margin-top: 0.8rem; */
+    margin-left: 30px;
+}
+
