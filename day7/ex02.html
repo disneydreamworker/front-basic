@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이슨 이라구!</title>
+</head>
+<body>
+    <script>
+        let user = {
+            name : 'john',
+            age : 30,
+            company : 'ssg.inc',
+            
+            // toString(){
+            //     return `(name: '${this.name}', age: '${this.age}')`;
+            // }
+        };
+        alert(user)
+        
+        let meeting = {
+            title : "Coffee Price",
+            room: {
+                age :26,
+                isGirlFriend:false,
+                participants:['천안','판교']
+            }
+        };
+        alert(JSON.stringify(meeting));
+
+        let parseMeeting = JSON.parse(meeting);
+        alert(parseMeeting.age);
+        
+
+        
+    </script>
+</body>
+</html>

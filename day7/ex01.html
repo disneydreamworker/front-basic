@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let status = ['i', 'am', 'happy'];
+        // delete status[1]; delete 함수는 요소 값은 지우지만 공간은 지우지 않음
+        status.splice(1,1); //splice는 완전 지움
+        console.log(status);
+        console.log(status.length);
+
+        let status2 = ['i','study', 'javascript','right','now'];
+        status2.splice(0,2);
+        alert(status2 + " " + status2.length);
+
+        let update = status2.splice(2,0,'나는','공부한다');
+        alert(status2);
+
+        let unsigned = status2.splice(-2, 0, 'lala' , 'oops'); //-는 뒤에서 부터 인덱스 시작
+        alert(status2);
+
+        //숫자 배열 추가 시
+        let numberSet1 = [1, 2];
+        alert(numberSet1.concat([3,4], [5,6]));
+        numberSet1.forEach(alert);
+
+        //forEach
+        
+
+        //index of 
+        let dummy = [1,0,null,false];
+        alert(dummy.indexOf(null));
+        alert(dummy.includes(1)); //1이 포함되어 있는지 확인
+        
+        const dum = [NaN]; 
+        alert(dum.indexOf(NaN)) //indexof는 위치값도 비교하고 값도 비교함. NaN은 못 찾음(예외)
+        alert(dum.includes(NaN)) //포함 여부만 확인하려면 incldues 
+
+        //map
+        let length = ['one', 'two', 'three'].map(item => item.length);
+        alert(length); //문자열의 길이를 배열에 담아 반환
+
+        //sort
+        length.sort();
+        function compareNum(n1, n2) {
+            if(n1 > n2) return 1;
+            if(n1 == n2) return 0;
+            if(n1 < n2) return -1;
+        }
+
+        length.sort(compareNum);
+
+        let nation = ['korea','japan','china'];
+        alert(nation.sort((a,b) => a>b?1:-1));
+        alert(nation.sort((a,b) => a.localeCompare(b)));
+    </script>
+</body>
+</html>
