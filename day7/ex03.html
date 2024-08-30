@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재귀함수</title>
+</head>
+<body>
+    <script>
+        let factorial = {
+            numberFactorial : function(number) {
+                if (number <= 1) return 1;      
+                return number * numberFactorial(number - 1);
+            }
+        };
+        console.log(factorial.numberFactorial(5));
+    </script>
+
+    <script>
+        let factorial2 = {
+            numberFactorial : function(number) {
+                if (number<=1) return 1;
+                let result = number;
+                while(--number) result *= number;
+                return result;
+            }
+        }
+    </script>
+
+    <script>
+        // 중첩 함수
+        function outer() {
+            let x = 1;
+
+            function inner() {
+                let y = 2;
+                console.log(x+y);
+            }
+
+            inner();
+        }
+        outer();
+    </script>
+
+    <script>
+        document.getElementById("my").addEventListener('click', function() {
+            alert('button click!');
+        });
+
+        setTimeout(function() {
+            console.log('1초 지남');
+        }, 1000);
+
+        //콜백 함수
+        // function repeat(n, f) {
+        //     for (let i = ; i <= n; i++) {
+                
+        //         f(i);
+            
+        //     }
+        // }
+
+        // let logPrint = function(i) {
+        //     console.log(i);
+        // }
+
+        repeat(5, logPrint);
+    </script>
+
+    <button id="my">버튼</button>
+</body>
+</html>
